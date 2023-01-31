@@ -1,0 +1,9 @@
+/* GLOBAL */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Quicksand", sans-serif;
+}

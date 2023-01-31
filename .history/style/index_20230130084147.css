@@ -1,0 +1,187 @@
+/* GLOBAL */
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: var(--primary-color);
+    --secondary: #f8b195;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+
+    --primary-color: #ff6600;
+    --secondary-color: #ffc600;
+    --font-color: rgba(22, 28, 45, 0.7);
+    --bg-color: #fff;
+    --heading-color: #232121;
+    --border-radius: 6px;
+    --border-radius-full: 35px;
+    --border-color: transparent;
+    --border-color-light: #eee;
+    --nav-color: #232121;
+    --dropdown-color: #fff;
+    --iframe-filter: grayscale(0%);
+    --bg-light: rgba(130, 115, 252, 0.05);
+    --bg-grey: #f7f7f7;
+    --footer-bg: #000;
+    --card-bg: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body a {
+    cursor: pointer !important;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100vw;
+    padding: 0 15px 0 15px;
+}
+
+/* /BANNER WITH HEADER */
+.banner {
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(
+            to right,
+            #ff6600,
+            hsl(30deg 100% 1% / 20%)
+        ),
+        url(../img/diner_img02.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: initial;
+    background-attachment: fixed;
+    min-height: 600px;
+}
+
+/* /header */
+.header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 20px;
+    padding: 40px 0 20px 0;
+    align-items: center;
+}
+
+.header-left-logo h1 a {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.header-right-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.header-right-content .search-bar .search input {
+    display: flex;
+    flex: 1;
+    padding: 10px 50px 10px 20px;
+    height: 100%;
+    font-size: 16px;
+    color: var(--font-color);
+    border: none;
+    font-weight: 400;
+    border-radius: var(--border-radius);
+    position: relative;
+    right: 0;
+    background: var(--bg-color);
+    outline: 0;
+    border: 1px solid var(--bg-color);
+}
+
+.header .header-right-content .search-bar .search span {
+    position: absolute;
+    right: 20px;
+    font-size: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.header .header-right-content .toggle-nightMode button {
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+/* //header */
+
+/* /banner-intro */
+.banner .banner-intro {
+    max-width: 600px;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.banner .banner-intro h3 {
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.banner .banner-intro .lorem {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #fff;
+}
+
+.btn-white {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 45px;
+
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+}
+
+.btn-white:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+}
+/* //banner-intro */
+/* //BANNER WITH HEADER */

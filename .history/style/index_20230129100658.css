@@ -1,0 +1,37 @@
+/* GLOBAL */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+}
+
+body a {
+    cursor: pointer !important;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100vw;
+    padding: 0 15px 0 15px;
+}
+
+/* BANNER WITH HEADER */
+.banner {
+    /* width: 100%; */
+    background-size: cover;
+    background-image: linear-gradient(
+            to right,
+            #ff6600,
+            hsl(30dreg 100% 1% / 20%)
+        ),
+        url(../img/diner_img02.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: initial;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+
+.header {
+}
