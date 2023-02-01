@@ -253,38 +253,9 @@ body p {
     background: var(--dark-background-color);
 }
 
-.dark .card-body .card-body-title {
-    color: white;
+.dark .card-body-title {
+    color: rgb(234, 234, 234);
 }
-
-.dark .card-body p {
-    color: var(--dark-font-color);
-}
-
-.dark .card-body .card-footer .card-footer-left a {
-    color: white;
-}
-
-.dark .card-body .card-footer .card-footer-right a {
-    color: white;
-}
-
-.dark .testimonial {
-    background: var(--dark-background-color-darker);
-}
-
-.dark .testimonial .testimonial-carousel .testimonial-item .impress {
-    color: white;
-}
-
-.dark .testimonial .testimonial-carousel .testimonial-item p {
-    color: var(--dark-font-color);
-}
-
-.dark .testimonial .testimonial-carousel .testimonial-item h3 {
-    color: white;
-}
-
 /* //status:dark-mode */
 
 /* //header */
