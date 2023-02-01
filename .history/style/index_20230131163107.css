@@ -77,15 +77,6 @@ body a {
     padding: 0 15px 0 15px;
 }
 
-body p {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--font-color);
-    font-family: "Quicksand", sans-serif;
-}
-
 /* /BANNER WITH HEADER */
 .banner {
     width: 100%;
@@ -431,7 +422,8 @@ body p {
 .card-body p {
     line-height: 1.5;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 100;
+    color: var(--font-color);
 }
 
 .card-body .card-footer {
@@ -485,51 +477,6 @@ body p {
 /* //POST */
 
 /* /TESTIMONIAL */
-
-.testimonial .testimonial-carousel .testimonial-item a .item-img {
-    display: block;
-    margin: 0 auto;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.testimonial .testimonial-carousel .testimonial-item .quotation {
-    color: var(--primary-color);
-    font-size: 20px;
-}
-
-.testimonial .testimonial-carousel .testimonial-item .impress {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    font-family: "Quicksand", sans-serif;
-}
-
-.testimonial .testimonial-carousel .testimonial-item p {
-    width: 50vw;
-    margin: 0 auto;
-    color: var(--font-color);
-    letter-spacing: 1px;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.testimonial .testimonial-carousel .testimonial-item h3 {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: "Quicksand", sans-serif;
-}
-
-/* //TESTMONIAL */
-
-/* ///Owl--global--CSS */
-/**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
 .owl-carousel,
 .owl-carousel .owl-item {
     -webkit-tap-highlight-color: transparent;
@@ -749,10 +696,10 @@ body p {
 }
 
 /**
-   * Owl Carousel v2.3.4
-   * Copyright 2013-2018 David Deutsch
-   * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
-   */
+  * Owl Carousel v2.3.4
+  * Copyright 2013-2018 David Deutsch
+  * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+  */
 .owl-theme .owl-dots,
 .owl-theme .owl-nav {
     -webkit-tap-highlight-color: transparent;
@@ -873,5 +820,4 @@ button.owl-next {
         bottom: 38%;
     }
 }
-/*--//clients--*/
-/* ///Owl--global--CSS */
+/* //TESTMONIAL */
