@@ -74,7 +74,7 @@ body a {
 .container {
     max-width: 1280px;
     width: 100vw;
-    padding: 0 36px 0 20px;
+    padding: 0 20px 0 20px;
 }
 
 body p {
@@ -118,6 +118,13 @@ body p {
     font-weight: 700;
 }
 
+@media only screen and (max-width: 479px) {
+    .header-left-logo h1 a {
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
 .header-right-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -137,7 +144,13 @@ body p {
     border-radius: var(--border-radius);
     background: var(--bg-color);
     outline: 0;
-    border: none;
+    border: 1px solid var(--bg-color);
+}
+
+@media only screen and (max-width: 479px) {
+    .header-right-content .search-bar .search input {
+        padding: 10px 50px 10px 20px;
+    }
 }
 
 .search {
@@ -157,52 +170,6 @@ body p {
     border: none;
     background-color: transparent;
 }
-
-/* /status:light-mode */
-.header .header-right-content .toggle-nightMode .moon {
-    /* display: none; */
-    display: block;
-}
-
-.header .header-right-content .toggle-nightMode .sun {
-    display: none;
-}
-/* //status:light-mode */
-
-/* /status:dark-mode */
-.dark #nightMode .moon {
-    display: none;
-}
-
-.dark #nightMode .sun {
-    display: block;
-}
-
-:root {
-    --dark-background-color: rgb(40, 40, 40);
-    --dark-background-color-darker: rgb(35, 34, 32);
-    --dark-font-color: rgb(237, 237, 237);
-}
-.dark .header-right-content .search-bar .search input {
-    background-color: var(--dark-background-color);
-    border: none;
-}
-
-.dark .header-right-content .search-bar .search span {
-    color: rgb(237, 237, 237);
-}
-
-.dark .title-bot {
-    color: var(--dark-font-color);
-}
-.dark .menu-top {
-    background-color: var(--dark-background-color);
-}
-
-.dark .menu-bot {
-    background-color: var(--dark-background-color-darker);
-}
-/* //status:dark-mode */
 
 /* //header */
 
@@ -245,43 +212,6 @@ body p {
     background-color: #fff;
 }
 /* //banner-intro */
-
-@media only screen and (max-width: 479px) {
-    .header-left-logo h1 a {
-        font-size: 36px;
-        font-weight: 700;
-    }
-
-    .header-right-content .search-bar .search input {
-        width: 60px;
-        padding: 4px 40px 4px 40px;
-    }
-
-    .banner .banner-intro {
-        max-width: 600px;
-        text-align: left;
-        margin-top: 20px;
-        padding-left: 10px;
-    }
-
-    .banner .banner-intro h3 {
-        font-size: 50px;
-        line-height: 50px;
-    }
-
-    .title-top {
-        font-size: 18px;
-    }
-
-    .title-bot {
-        font-size: 36px;
-    }
-
-    .menu .menu-bot .categories-menu {
-        padding-left: 0;
-    }
-}
-
 /* //BANNER WITH HEADER */
 
 /* /MENU */
@@ -311,7 +241,6 @@ body p {
     overflow: hidden;
     position: relative;
     margin-bottom: 32px;
-    padding-left: 16px;
 }
 
 .categories-item .categories-img .img {
@@ -354,6 +283,18 @@ body p {
     letter-spacing: 1px;
 }
 
+@media screen and (min-width: 1220px) {
+    .categories-items {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1219px) {
+    .categories-items {
+        padding-left: 15px;
+    }
+}
 /* //menu-top*/
 
 /* /menu-bot */
@@ -452,9 +393,6 @@ body p {
     margin-left: -15px;
 }
 
-.card {
-    padding: 0 20px;
-}
 .posts-grid .posts-grid-item .card {
     position: relative;
     word-wrap: break-word;

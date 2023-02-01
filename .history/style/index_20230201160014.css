@@ -180,8 +180,9 @@ body p {
 
 :root {
     --dark-background-color: rgb(40, 40, 40);
-    --dark-background-color-darker: rgb(35, 34, 32);
+    --dark-background-color-darker: rgb(35,34,32)
     --dark-font-color: rgb(237, 237, 237);
+
 }
 .dark .header-right-content .search-bar .search input {
     background-color: var(--dark-background-color);
@@ -200,7 +201,7 @@ body p {
 }
 
 .dark .menu-bot {
-    background-color: var(--dark-background-color-darker);
+    background-color: #232220;
 }
 /* //status:dark-mode */
 
