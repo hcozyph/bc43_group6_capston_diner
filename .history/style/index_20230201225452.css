@@ -372,14 +372,7 @@ body p {
     }
 }
 
-@media only screen and (min-width: 740px) and (max-width: 1023px) {
-    .menu #container-menu-top {
-        padding-right: 20px;
-    }
-
-    .menu #contsiner-menu-bot {
-        padding-right: 48px;
-    }
+@media only screen and (max-width: 400px) {
 }
 
 /* //BANNER WITH HEADER */
