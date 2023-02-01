@@ -152,7 +152,7 @@
         </section>
 
 
-
+<body>
     <!-- ABOUT -->
     <section class="about">
         <div class="container py-5 py-md-5">
@@ -800,7 +800,78 @@
 
         </section>
 
-            <!-- FOOTER -->
+
+
+        <!-- LIBRARY -->
+        <!-- jquery v3.6.3 -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- /nightMode -->
+        <script>
+            document.getElementById("nightMode").onclick = function () {
+                document.getElementById("myBody").classList.toggle("dark");
+            };
+        </script>
+        <!-- //nightMode -->
+
+        <!-- /nav-overlay -->
+        <script src="./js/modernizr-2.6.2.min.js"></script>
+        <script src="./js/classie.js"></script>
+        <script src="./js/index.js"></script>
+        <!-- //nav-overlay -->
+
+        <!-- /testimonial--lib--owlCarousel -->
+        <script src="./js/owl.carousel.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+            $("#owl-agency").owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 50,
+                responsiveClass: true,
+                responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                736: {
+                    items: 1,
+                    nav: false
+                }
+                }
+            })
+            })
+        </script>
+        <!-- //testimonial--lib--owlCarousel -->
+
+        <!-- BS v5.3 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+    <!-- NEW -->
+    <section class="new">
+        <div class="container">
+            <div class="categories"></div>
+
+            <div class="grid-menu"></div>
+        </div>
+    </section>
+
+
+
+    <!-- POSTS -->
+    <section class="posts"></section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial"></section>
+
+    <!-- FOOTER -->
     <section class="footer py-5 ">
         <div class="container py-4">
             <div class="footer-content row">
@@ -902,56 +973,7 @@
         </button>
     </section>
 
-
-        <!-- LIBRARY -->
-        <!-- jquery v3.6.3 -->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-
-        <!-- /nightMode -->
-        <script>
-            document.getElementById("nightMode").onclick = function () {
-                document.getElementById("myBody").classList.toggle("dark");
-            };
-        </script>
-        <!-- //nightMode -->
-
-        <!-- /nav-overlay -->
-        <script src="./js/modernizr-2.6.2.min.js"></script>
-        <script src="./js/classie.js"></script>
-        <script src="./js/index.js"></script>
-        <!-- //nav-overlay -->
-
-        <!-- /testimonial--lib--owlCarousel -->
-        <script src="./js/owl.carousel.js"></script>
-        
-        <script>
-            $(document).ready(function () {
-            $("#owl-agency").owlCarousel({
-                loop: true,
-                nav: false,
-                margin: 50,
-                responsiveClass: true,
-                responsive: {
-                0: {
-                    items: 1,
-                    nav: false
-                },
-                736: {
-                    items: 1,
-                    nav: false
-                }
-                }
-            })
-            })
-        </script>
-        <!-- //testimonial--lib--owlCarousel -->
-
-            <!-- BacktoTOP button -->
+    <!-- BacktoTOP button -->
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () {
@@ -973,6 +995,15 @@
         }
     </script>
 
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
 
     <!-- CounterUP js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
@@ -1008,11 +1039,6 @@
             });
         });
     </script>
+</body>
 
-
-        <!-- BS v5.3 JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
 </html>
-
-
