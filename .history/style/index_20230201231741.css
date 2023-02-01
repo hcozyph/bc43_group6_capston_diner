@@ -360,58 +360,35 @@ body p {
         font-size: 36px;
     }
 
-    .menu #container-menu-top {
-        padding-right: 26px;
-        padding-left: 20px;
+    .menu .menu-top {
+        padding-left: 6px;
     }
-
-    .menu #container-menu-bot {
-        padding-right: 50px;
-        padding-left: 20px;
-    }
-
-    .categories-item .categories-info a h4 {
-        font-size: 20px;
-    }
-
-    .categories-item .categories-info span {
-        font-size: 16px;
+    .menu .menu-bot .categories-menu {
+        padding-left: 6px;
     }
 
     .testimonial .testimonial-carousel .testimonial-item p {
         width: 100%;
     }
-
-    .posts {
-        padding-left: 8px;
-        padding-right: 10px;
-    }
 }
 
-@media only screen and (min-width: 769) and (max-width: 1023px) {
-    #container-menu-top {
-        padding-right: 24px !important;
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .menu #container-menu-top {
+        padding-right: 20px;
     }
 
-    #container-menu-bot {
-        padding-right: 48px !important;
+    .menu #contsiner-menu-bot {
+        padding-right: 48px;
     }
 }
 
 @media only screen and (width: 768px) {
     .menu #container-menu-top {
         padding-right: 26px;
-        padding-left: 20px;
     }
 
     .menu #container-menu-bot {
-        padding-right: 50px;
-        padding-left: 20px;
-    }
-
-    .posts {
-        padding-left: 0px;
-        padding-right: 20px;
+        padding-right: 54px;
     }
 }
 
